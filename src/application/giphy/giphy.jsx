@@ -1,32 +1,32 @@
-import React, { useEffect, useState } from 'react'
-import searchGiphy from '../../common/services/Gifs'
+import React, { Component } from 'react'
+import { getUsers } from '../../common/services/Gifs'
+import Listing from '../../common/components/Listing.jsx'
 
-const Giphy = ({ search }) => {
-  const getTermOfSearch = (q) => {
-    const termSearch = q.split(' ').join('')
-    return termSearch.slice(0, 3)
+class Giphy extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      giphy: [],
+    }
   }
 
-  const paramQ = getTermOfSearch(search)
-
-  const [giphy, setGiphy] = useState()
-
-  const getGif = () => {
-    searchGiphy(paramQ).then((res) => {
+  componentDidMount() {
+    getUsers(10).then((res) => {
       const { data } = res.data
-      setGiphy(data[0].images.original.url)
+      this.setState({
+        giphy: data,
+      })
     })
   }
 
-  useEffect(() => {
-    getGif()
-  }, [])
-
-  return (
-    <div>
-      <img src={giphy} alt="" />{' '}
-    </div>
-  )
+  render() {
+    const { giphy } = this.state
+    return (
+      <div>
+        <Listing data={giphy} />
+      </div>
+    )
+  }
 }
-
 export default Giphy

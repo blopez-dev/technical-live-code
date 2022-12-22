@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const URL = 'https://api.giphy.com/v1/gifs'
+const URL = 'https://reqres.in/api'
 
 const instance = axios.create({
   baseURL: URL,

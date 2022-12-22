@@ -4,7 +4,7 @@ import Giphy from './giphy/giphy.jsx'
 const App = () => (
   <>
     <h1>Datio live Codding</h1>
-    <Giphy search={'goku'} />
+    <Giphy search={2} />
   </>
 )
 export default App
