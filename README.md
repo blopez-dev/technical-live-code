@@ -32,6 +32,8 @@ Dadas la API: https://reqres.in/api
   }
   ```
 
+- La prueba deberá contener al finalizar al menos 3 commits, y una pull-request a la rama origen (staging). </br>
+
 ## <h3>Aspecto final prueba</h3>
 
 - El resultado final de la prueba, debe parecerse lo más posible al resultado de abajo.
