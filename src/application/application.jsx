@@ -1,10 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from '../App.jsx'
-import '../index.css'
+import Giphy from './giphy/giphy.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const App = () => (
+  <>
+    <h1>Datio live Codding</h1>
+    <Giphy search={'goku'} />
+  </>
 )
+export default App
