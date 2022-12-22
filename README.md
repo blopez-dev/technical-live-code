@@ -7,14 +7,14 @@ Más abajo encontrarás las pautas para poder correctamente la prueba.
 
 ## <h3>Objeto de la prueba</h3>
 
-* El resultado final que buscamos obtener al final de la prueba es la visualización de un listado de objetos en formato de tabla, </br> sobre los cuales podremos interaccionar 
-   de forma independiente.
+- El resultado final que buscamos obtener al final de la prueba es la visualización de un listado de objetos en formato de tabla, </br> sobre los cuales podremos interaccionar
+  de forma independiente.
 
 ## <h3>Estructura de la prueba</h3>
-* 
+
+-
 
 ![Pairing image](https://i.imgur.com/YIUfYcu.png)
-
 
 ## Technologies
 
