@@ -7,14 +7,38 @@ Más abajo encontrarás las pautas para poder correctamente la prueba.
 
 ## <h3>Objeto de la prueba</h3>
 
-- El resultado final que buscamos obtener al final de la prueba es la visualización de un listado de objetos en formato de tabla, </br> sobre los cuales podremos interaccionar
-  de forma independiente.
+Dadas la API: https://reqres.in/api
 
-## <h3>Estructura de la prueba</h3>
+- Seleccionar el endpoint /users/ y mostrar un total de 10 resultados por cada consulta al servicio del mismo.
+- Desarrollar un componente que liste, en forma de tabla, los resultados obtenidos de la llamada.
+- Para los estilos de la tabla se proporcionan los siguientes estilos en .css:
 
--
+  ```
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  }
 
-![Pairing image](https://i.imgur.com/YIUfYcu.png)
+  td,
+  th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  }
+
+  tr:nth-child(even) {
+  background-color: #dddddd;
+  }
+  ```
+
+- La prueba deberá contener al finalizar al menos 3 commits, y una pull-request a la rama origen (staging). </br>
+
+## <h3>Aspecto final prueba</h3>
+
+- El resultado final de la prueba, debe parecerse lo más posible al resultado de abajo.
+
+![Pairing image](src/assets/preview.png)
 
 ## Technologies
 
